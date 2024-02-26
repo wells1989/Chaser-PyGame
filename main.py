@@ -10,25 +10,21 @@ effects_directory = os.path.join(current_directory, 'effects')
 
 ## key variable generation
 pygame.init()
+sounds = {name: pygame.mixer.Sound(os.path.join(effects_directory, path)) for name, path in sound_files.items()}
+sounds['welcome'].play()
+display_rules_popup()
+welcome = False
 grid_size, cell_size, window_size, grid, window, player1_score, player2_score, player1_break_cards, player2_break_cards, chance_turn, player1_turn, warning_message, winning_message, BLACK, RED, BLUE, GRAY, GREEN, WHITE, extra_turn, running, game_active, font, alt_font, menu_font = generate_game_variables()
 
-sounds = {name: pygame.mixer.Sound(os.path.join(effects_directory, path)) for name, path in sound_files.items()}
 player1_wins = 0 
 player2_wins = 0
-welcome = True
 
 ## Game Loop
 while running:
     for event in pygame.event.get():
-        if welcome:
-            sounds['welcome'].play()
-            display_rules_popup()
-            welcome = False
-            continue
         
         # Game round variables
         used_break, extra_turn = generate_round_variables()
-        
 
         if event.type == pygame.QUIT:
             running = False

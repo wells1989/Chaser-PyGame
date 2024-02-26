@@ -40,7 +40,7 @@ def generate_window():
     cell_size = 35
     window_size = (grid_size * cell_size, grid_size * cell_size + 210)  # defines width then height of window, Increased height for the scores
     window = pygame.display.set_mode(window_size)
-    pygame.display.set_caption("Grid Game")
+    pygame.display.set_caption("Chaser Game")
 
     return grid_size, cell_size, window_size, window
 
@@ -155,4 +155,5 @@ def display_rules_popup():
             elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                 return_to_game_button = pygame.Rect(30, 530, 200, 300)
                 if return_to_game_button.collidepoint(event.pos):
+                    pygame.display.set_caption("Chaser Game")
                     waiting_for_input = False 
