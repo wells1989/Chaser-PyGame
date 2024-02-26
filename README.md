@@ -48,7 +48,7 @@ This PyGame based GUI project is a 2 player game, focusing on players obtaining 
 - **Game end**
 
 ![Screenshot (585)](https://github.com/wells1989/Full-stack-blog/assets/122035759/95c654d2-8877-454a-842d-07ac88664c38)
-
+  
 
 ### Project Notes:
 - The goal of this project was to develop more complex GUIs with PyGame to allow a more interactive user experience in addition to core back-end functionality
