@@ -47,7 +47,7 @@ This PyGame based GUI project is a 2 player game, focusing on players obtaining 
 
 - **Game end**
 
-![Screenshot (585)](https://github.com/wells1989/Full-stack-blog/assets/122035759/95c654d2-8877-454a-842d-07ac88664c38)
+![Screenshot (587)](https://github.com/wells1989/Full-stack-blog/assets/122035759/d76b8386-9ff9-4e26-9dff-8d2769798a6b)
   
 
 ### Project Notes:
