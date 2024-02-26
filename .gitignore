@@ -1,0 +1,10 @@
+# .gitignore
+
+# Ignore the venv directory
+venv/
+
+# Ignore the drafts directory
+drafts/
+
+# Ignore the single_file_submission.py file
+single_file_submission.py
