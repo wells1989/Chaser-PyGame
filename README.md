@@ -20,7 +20,7 @@ This PyGame based GUI project is a 2 player game, focusing on players obtaining 
 1. Clone the repository:
 
    ```bash
-   gh repo clone wells1989/Chaser-PyGame-
+   gh repo clone wells1989/Chaser-PyGame
 
 2. Install dependencies:
 
