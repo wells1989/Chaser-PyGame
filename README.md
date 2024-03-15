@@ -11,9 +11,9 @@
 This PyGame based GUI project is a 2 player game, focusing on players obtaining the most points possible and attempting to trap / chase the other player to end the game. There are also several bonus cells that give the players extra turns / the ability to break through already visited cells to escape a trapped position.
 
 
-**Tech-stack: python / PyGame **
+**Tech-stack: python / PyGame**
 
-**Project Areas: Dynamic GUIs with Pygame, advanced game / winning conditions / conditional PyGame rendering based off game conditions / managing multiple PyGame screen displays  **
+**Project Areas: Dynamic GUIs with Pygame, advanced game / winning conditions / conditional PyGame rendering based off game conditions / managing multiple PyGame screen displays**
 
 ## Installation
 
