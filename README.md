@@ -1,62 +1,28 @@
-# Multi-player Battlefield Strategy Game
-
-## Table of Contents
-
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Notes](#project-notes)
-
-## Description
-This PyGame based project is a variable 2-4 player game, occuring on different map sizes. The game consists of taking over / attacking enemy cells / upgrading current cells to control the battlefield and eliminate other players.
-
-**Project Areas: OOP and event-drive programming with Python, complex data types, abstraction and encapsulation, function decomposition**
-
-## Installation
-
 1. Clone the repository:
 
    ```bash
-   gh repo clone wells1989/Multiplayer-Battlefield-Strategy-Game
+   gh repo clone wells1989/Chaser-PyGame
 
 2. Install dependencies:
 
    ```bash
    pip install -r requirements.txt 
-
-
 ## Usage
 ### Gameplay
-- Players control their HQ cell to start the game, with random selection determining the first player.
-- Each player has 3 turns in a round, which they can use to take over new cells, upgrade current cells or attack enemy cells.
-- At the end of the round the player gains points based on the cells they control at that point.
-- Certain Terrain cells will require extra upgrades to occupy them, but they also offer benefits when being used to attack other cells.
-- When a cell is attacked:
-  - The attacking and defending cells attributes are compare to determine the winner.
-  - Comms allows you to attack with multiple cells simultaneously.
-  - If the attacking player fails in the attack they also lose the remainder of their turn.
-- The players can view the rules / restart the game at any point / reset the game (i.e. changing the number of players etc)
-
+- Players each start at a random position at the edge of the grid.
+- Players move either horizontally or vertically, and can only move to new squares
+- \* cells provide a random bonus payout / an extra turn for the current player / a break card for the current player (which allows them to go into previously visited squares / escape out of a trapped position)
+- The game continues until one player is trapped in a position, at which point the player with the most points wins the game
+- The players can view the rules / restarts the game at any point, and when the game is won the players can choose to play again.
 ### Game GUI
 - **Welcome screen / rules**
-
-![Screenshot (596)](https://github.com/wells1989/Full-stack-blog/assets/122035759/dbbf9371-8fe1-4f50-8021-7c9e46ff2d4f)
-
+![Screenshot (583)](https://github.com/wells1989/Full-stack-blog/assets/122035759/cfab8e9a-e71c-4f49-b875-b4df4037b55c)
 - **Game start**
-
-![Screenshot (597)](https://github.com/wells1989/Full-stack-blog/assets/122035759/1054a4be-7ad7-476c-aaeb-02e4bafcb837)
-
-- **Mid Game**
-![Screenshot (600)](https://github.com/wells1989/Full-stack-blog/assets/122035759/d82e35ae-f411-47cd-8314-04aa47ecd339)
-
-- **Rules**
-![Screenshot (599)](https://github.com/wells1989/Full-stack-blog/assets/122035759/09f73076-bd9b-4684-9934-ff44f5d95d85)
-
+![Screenshot (586)](https://github.com/wells1989/Full-stack-blog/assets/122035759/08cdd178-7f0a-4386-b3d9-009c07c15230)
 - **Game end**
-![Screenshot (606)](https://github.com/wells1989/Full-stack-blog/assets/122035759/a4c2ea68-3aef-4f4c-9872-42d615b1ae4f)
-
+![Screenshot (587)](https://github.com/wells1989/Full-stack-blog/assets/122035759/d76b8386-9ff9-4e26-9dff-8d2769798a6b)
+  
 ### Project Notes:
-- The goal of this project was to develop a more dynamic, variable game with more advanced functionality. I also refactored a lot of the code to incorporate modularity and abstraction throughout the process
-
+- The goal of this project was to develop more complex GUIs with PyGame to allow a more interactive user experience in addition to core back-end functionality
 #### Future-development:
-- A future development would be to incprorate a different map style, for instance having a global map instead of the grid structure, also allowing player logins to track their win history.
+- Future versions could have incorporated more players or allowed players to save their high scores of each game. However due to the GUI focused purpose of this project, user login / saving scores was not included yet
